@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Unsere erste Zeile CSS</title>
+    <style>
+        /* Kommentare in CSS sehen etwas anders aus */
+        body {
+            /* es gibt verschiedene Arten von Rändern, margin ist der Abstand außerhalb des Elements */
+            margin: 0;
+            /* hier bestimmst du die Schriftarten, falls die erste dem Besucher nicht zur verfügung steht wird die nächste probiert usw */
+            font-family: Arial, Helvetica, sans-serif;
+            /* oft kann man sich vom namen denken, was eine bestimmte zeile macht */
+            background-color: dimgrey;
+            /* hier setzt du die schrift-farbe */
+            color: white;
+            /* selbst ich muss noch manchmal googeln, welche werte man bestimmten attributen geben muss und was sie heißen*/
+            text-shadow: 0 0 2px black;
+        }
+
+        /* `.ueberschrift` ist ein selector */
+        .ueberschrift {
+            /* rem ist eine Einheit, die sich auf die text-größe des root-elements bezieht */
+            padding: 2rem;
+            /* padding ist der Abstand innerhalb des Elements */
+            padding-bottom: 0;
+            text-align: center;
+            font-size: 30pt;
+        }
+
+        /* die folgenden regeln gelten nur für `p`-Elemente, die direkte children eines `main`-Elements sind */
+        main p {
+            /* in CSS kannst du mit verschiedenen Einheiten bestimmte Größen angeben */
+            font-size: 20pt;
+            /* `%` bezieht sich auf die Größe, des parent element's */
+            padding: 5%;
+        }
+
+        /* Es gibt auch andere selectors, falls du zB das attribut `id` in einem Element benutzt */
+        /* das würde dann folgendermaßen aussehen `#idwert {…}` */
+        /* Was heißt der Selector `body` und was wäre `main.myclass`? */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="ueberschrift">Die Überschrift</h1>
+    </header>
+    <main>
+        <!-- Lorem ipsum ist ein Platzhalter Text ohne Bedeutung, falls du mal wissen willst, wie das Layout aussieht, ohne dass der Inhalt schon geschrieben wurde -->
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+            feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+            delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+            possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+    </main>
+</body>
+
+</html>

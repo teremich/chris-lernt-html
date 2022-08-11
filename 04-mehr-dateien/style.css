@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    margin: 5%;
+}
+
+p {
+    border-color: red;
+    border-style: solid;
+    /* abgerundete ecken */
+    border-radius: 5px;
+}
+
+/* was passiert, wenn du das hier weglässt? */
+a {
+    color: blue;
+    text-decoration: none;
+}
